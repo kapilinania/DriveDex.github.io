@@ -3,17 +3,17 @@
 Welcome to DriveDex Predictor, your go-to tool for predicting used car prices based on model, drive, owner, and fuel type. This project combines HTML, CSS, JavaScript, and a Python machine learning model, specifically the Random Forest Regressor, to provide accurate and reliable predictions.
 
 ## Demo
-Check out the live demo [here](https://kapilinania.github.io/DriveDex.github.io/).
+Check out the live demo 🚗 [here](https://kapilinania.github.io/DriveDex.github.io/).
 
 ## Features
 
 - **User-Friendly Interface:** Our web application offers an intuitive and easy-to-use interface.
 - **Predictive Power:** Utilizing a Random Forest Regressor model to predict used car prices with precision.
 - **Model Inputs:**
-  - Car Model
-  - Drive Type
-  - Ownership History
-  - Fuel Type
+  - Car Model 🚙
+  - Drive Type 🛣️
+  - Ownership History 🏠
+  - Fuel Type ⛽
 
 ## Technologies Used
 
