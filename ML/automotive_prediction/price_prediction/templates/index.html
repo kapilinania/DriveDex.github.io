@@ -1,0 +1,960 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveDex's </title>
+
+    <!-- import css custome file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+
+        <a href="#" class="logo"><img src="" alt="">DriveDex's</a>
+
+        <!-- navbar section -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#services">services</a>
+            <a href="#featured">featured</a>
+            <a href="#update">updates</a>
+        </nav>
+
+        <!-- login button -->
+        <div id="login-btn">
+            <!-- <button type="button" class="btn">login</button> -->
+            <i class="fa-regular fa-user"></i>
+        </div>
+
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form -->
+    <div class="login-form-container">
+
+        <span class="fa-solid fa-xmark" id="close-login-btn"></span>
+
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <input type="submit" value="login now" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>don't have an account <a href="#">create one</a></p>
+        </form>
+
+    </div>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+
+        <h1 class="home-parallax" data-speed="-2">Find Your Car</h1>
+        <img class="home-parallax" data-speed="5" src="{% static 'image/cark1.png' %}" alt="">
+        <a href="#" class="btn home-parallax" data-speed="7">explore cars</a>
+
+    </section>
+    <!-- home section end -->
+
+
+    <!-- icon section starts -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fa-solid fa-house"></i>
+            <div class="content">
+                <h3>100+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <div class="content">
+                <h3>3100+</h3>
+                <p>cars sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-users"></i>
+            <div class="content">
+                <h3>500+</h3>
+                <p>happy clients</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <div class="content">
+                <h3>390+</h3>
+                <p>new cars</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- icon section end -->
+
+    <!-- vehical section starts-->
+    <section class="vehical" id="vehicles">
+
+        <h1 class="heading">popular <span>vehicals</span></h1>
+
+        <div class="slider">
+
+            <div class="wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="preBtn"></div>
+
+                <div class="wraper-box">
+                    <div class="box active" id="car-img1">
+                        <img src="{% static 'image/xuv300-exterior-right-front-three-quarter-148709.webp' %}" alt="">
+                        <div class="content">
+
+
+                            <!-- <p>
+                               
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <label>Model:</label> 2023
+                                        </div>
+                                        <div class="info">
+                                            <label>Transmission:</label> automatic
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info">
+                                            <label>Fuel:</label> petrol
+                                        </div>
+                                        <div class="info">
+                                            <label>Speed:</label> 183mph
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                                
+                            </p>
+                            <a href="#" class="btn">check out</a> -->
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img2">
+                        <img src="{% static 'image/swift-exterior-right-front-three-quarter-64.webp' %}" alt="">
+                        <div class="content">
+
+                            <!-- <p>
+                               
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <label>Model:</label> 2023
+                                        </div>
+                                        <div class="info">
+                                            <label>Transmission:</label> automatic
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info">
+                                            <label>Fuel:</label> petrol
+                                        </div>
+                                        <div class="info">
+                                            <label>Speed:</label> 183mph
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                                
+                                
+                            </p>
+                            <a href="#" class="btn">check out</a> -->
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img3">
+                        <img src="{% static 'image/Maruti-Suzuki-Ignis-Right-Front-Three-Quarter-149591.webp' %}"
+                            alt="">
+                        <div class="content">
+
+                            <!-- <p>
+                               
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <label>Model:</label> 2023
+                                        </div>
+                                        <div class="info">
+                                            <label>Transmission:</label> automatic
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info">
+                                            <label>Fuel:</label> petrol
+                                        </div>
+                                        <div class="info">
+                                            <label>Speed:</label> 183mph
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                                
+                                
+                            </p>
+                            <a href="#" class="btn">check out</a> -->
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img4">
+                        <img src="{% static 'image/xuv300-exterior-right-front-three-quarter-148709.webp' %}" alt="">
+                        <div class="content">
+
+                            <!-- <p>
+                               
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <label>Model:</label> 2023
+                                        </div>
+                                        <div class="info">
+                                            <label>Transmission:</label> automatic
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info">
+                                            <label>Fuel:</label> petrol
+                                        </div>
+                                        <div class="info">
+                                            <label>Speed:</label> 183mph
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                                
+                                
+                            </p>
+                            <a href="#" class="btn">check out</a> -->
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img5">
+                        <img src="{% static 'image/safari-facelift-exterior-right-front-three-quarter-39.webp' %}"
+                            alt="">
+                        <div class="content">
+
+                            <!-- <p>
+                               
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <label>Model:</label> 2023
+                                        </div>
+                                        <div class="info">
+                                            <label>Transmission:</label> automatic
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info">
+                                            <label>Fuel:</label> petrol
+                                        </div>
+                                        <div class="info">
+                                            <label>Speed:</label> 183mph
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                                
+                                
+                            </p>
+                            <a href="#" class="btn">check out</a> -->
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img6">
+                        <img src="{% static 'image/tiago-ev.webp' %}" alt="">
+                        <div class="content">
+
+                            <!-- <p>
+                               
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <label>Model:</label> 2023
+                                        </div>
+                                        <div class="info">
+                                            <label>Transmission:</label> automatic
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info">
+                                            <label>Fuel:</label> petrol
+                                        </div>
+                                        <div class="info">
+                                            <label>Speed:</label> 183mph
+                                        </div>
+                                    </li>
+                                
+                                </ul>
+                                
+                                
+                            </p>
+                            <a href="#" class="btn">check out</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext " id="nextBtn"></div>
+            </div>
+
+
+            <div class="activeCircle">
+                <div class="fa-regular fa-solid fa-circle" id="forCar-img1"></div>
+                <div class="fa-regular fa-circle" id="forCar-img2"></div>
+                <div class="fa-regular fa-circle" id="forCar-img3"></div>
+                <div class="fa-regular fa-circle" id="forCar-img4"></div>
+                <div class="fa-regular fa-circle" id="forCar-img5"></div>
+                <div class="fa-regular fa-circle" id="forCar-img6"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- vehical section end-->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Price</span> Predictor</h1>
+
+        <div class="row">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img src="{% static 'image/s-presso.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/thar-exterior-right-front-three-quarter-35.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/xuv300-exterior-right-front-three-quarter-148709.webp' %}" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="{% static 'image/tiago-ev.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/kwid-exterior-right-front-three-quarter-2.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/swift-exterior-right-front-three-quarter-64.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img src="{% static 'image/xcent-exterior-right-side-view.webp' %}"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/Maruti-Suzuki-Ignis-Right-Front-Three-Quarter-149591.webp' %}" alt="">
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <form id="drivedexForm" action="result">
+                {% csrf_token %}
+                <h3>Drivedex predictor</h3>
+                <select name="q1" id="carName" class="box" placeholder="Car Name">
+                    {% for key, value in data_dict.items %}
+                    <option value="{{ key }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+                <select name="q2" id="year" class="box" placeholder="Year">
+                    {% for i in year %}
+                    <option value="{{i}}">{{i}}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" name="q3" id="distance" class="box" placeholder="Distance">
+                <select name="q4" id="owner" class="box" placeholder="Owner">
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                </select>
+                <select name="q5" id="fuel" class="box" placeholder="Fuel">
+                    <option value="3">PETROL</option>
+                    <option value="1">DIESEL</option>
+                    <option value="2">LPG</option>
+                    <option value="0">CNG</option>
+                </select>
+                <select name="q6" id="drive" class="box" placeholder="Drive">
+                    <option value="1">Manual</option>
+                    <option value="0">Automatic</option>
+                </select>
+                <button type="button" onclick="storeValues()" class="btn">Price Predictor</button>
+            </form>
+            
+
+
+        </div>
+    </section>
+    <!-- contact section end -->
+    <!-- -----result section is here ----  -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Your</span> Car</h1>
+
+        <div class="row">
+            <form action="">
+                <h3>Result</h3>
+                <div id="displayContainer">
+                    <!-- Data will be displayed here -->
+                </div>
+                <li class="price_new"><strong>Price:</strong> {{result}}</li>
+            </form>
+
+            <!-- <div>
+                <img src="{% static 'image/safari-facelift-exterior-right-front-three-quarter-39.webp' %}" alt="">
+            </div>
+            <div>
+                <img src="{% static 'image/xuv300-exterior-right-front-three-quarter-148709.webp' %}" alt="">
+            </div> -->
+            <div id="imageContainer">
+                <!-- Images will be displayed here -->
+            </div>
+
+
+            <!-- ---images code is here--  -->
+
+            <!-- Swiper -->
+            <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img src="{% static 'image/s-presso.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/thar-exterior-right-front-three-quarter-35.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/xuv300-exterior-right-front-three-quarter-148709.webp' %}" alt="">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/xuv500-exterior-right-front-three-quarter-2.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img src="{% static 'image/tiago-ev.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/kwid-exterior-right-front-three-quarter-2.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/safari-facelift-exterior-right-front-three-quarter-39.webp' %}" alt=""></div>
+                    <div class="swiper-slide"><img src="{% static 'image/xcent-exterior-right-side-view.webp' %}"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="{% static 'image/Maruti-Suzuki-Ignis-Right-Front-Three-Quarter-149591.webp' %}" alt="">
+                    </div>
+                </div>   
+            </div> -->
+
+
+
+
+        </div>
+    </section>
+
+    <!-- ----result section is over now ----  -->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+
+        <h1 class="heading">our <span>services</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-car"></i>
+                <h3>car selling</h3>
+                <p>Drive your dreams home with style and savings – where every mile feels like joy</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>parts repair</h3>
+                <p>Quality rides, same parts repair – keeping your journey smooth, affordable, and reliable</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-car-burst"></i>
+                <h3>car insurance</h3>
+                <p>Protect your ride, secure your journey – affordable car insurance for peace of mind on the road.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-car-battery"></i>
+                <h3>battery replacement</h3>
+                <p>Power up your drive with seamless battery replacement – keeping you on the road, always charged</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <p>Smooth rides start with a fresh start – efficient oil change for peak performance and reliability.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>Reliability never sleeps – our 24/7 support ensures assistance whenever you need it, guaranteed.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- services section end -->
+
+    <!-- featured section starts -->
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>featured</span> cars</h1>
+
+        <div class="featured-slider">
+
+            <div class="featured-wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="fPreBtn"></div>
+
+                <div class="featured-wrapper2">
+                    <div class="featured-wrapper-box">
+
+                        <div class="box active">
+                            <img src="{% static 'image/car7.png' %}" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="{% static 'image/car8.png' %}" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="{% static 'image/car9.png' %}" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="{% static 'image/car10.png' %}" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="{% static 'image/car11.png' %}" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="{% static 'image/car12.png' %}" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="{% static 'image/car13.png' %}" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="{% static 'image/car14.png' %}" alt="">
+                            <h3>new model</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext" id="fNextBtn"></div>
+            </div>
+
+            <div class="fActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- featured section end -->
+
+    <!-- subscribe section starts -->
+    <section class="subscribe" id="update">
+
+        <h3>subscribe for latest updates</h3>
+
+        <p>Stay informed, subscribe for the latest updates today!</p>
+
+        <form action="">
+            <input type="email" placeholder="enter your email">
+
+            <input type="submit" placeholder="subBtn">
+        </form>
+    </section>
+    <!-- subscribe section end -->
+
+    <!-- review section starts -->
+    <!-- <section class="reviews" id="reviews">
+
+        <h1 class="heading">client's <span>review</span></h1>
+
+        <div class="review-slider">
+            <div class="fa-solid fa-angle-left rPreNext" id="rPreBtn"></div>
+            <div class="review-wrapper">
+
+                <div class="review-wrapper-box">
+
+                    <div class="box active">
+                        <img src="{% static 'image/img1.jpg" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="{% static 'image/img2.jpg" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="{% static 'image/img3.jpg" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="{% static 'image/img4.jpg" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="{% static 'image/img5.jpg" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="{% static 'image/img6.jpg" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet, libero soluta
+                                nobis labore aut?</p>
+                            <h3>john devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="fa-solid fa-angle-right rPreNext" id="rNextBtn"></div>
+
+            <div class="rActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+        </div>
+    </section> -->
+    <!-- review section end -->
+
+    <!-- contact section starts -->
+    <!-- <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781700.7626304314!2d74.91767141980161!3d29.285725544780725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00b8670400b%3A0x732eaab4aaa6c143!2sHaryana!5e0!3m2!1sen!2sin!4v1676226353123!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea class="box" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+    </section> -->
+    <!-- contact section end -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+
+        <div class="footer-box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Jodhpur</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Jaipur</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Ajmer</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Kota</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Merta</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fa-solid fa-arrow-right"></i> home</a>
+                <a href="#vehicles"><i class="fa-solid fa-arrow-right"></i> vehicles</a>
+                <a href="#services"><i class="fa-solid fa-arrow-right"></i> services</a>
+                <a href="#featured"><i class="fa-solid fa-arrow-right"></i> featured</a>
+                <!-- <a href="#reviews"><i class="fa-solid fa-arrow-right"></i> reviews</a> -->
+                <a href="#contact"><i class="fa-solid fa-arrow-right"></i> contact</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> +111-222-3333</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> DriveDex@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> NSTI Jodhpur, Jodhpur, Rajasthan 342005</a>
+            </div>
+
+            <div class="box">
+                <h3>social media</h3>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i> pinterest</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">copyright &copy; | all rights reserved</div>
+    </section>
+    <!-- footer section end -->
+
+
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
+    <!-- import javascript custome file -->
+    <script src="{% static 'js/script.js' %}"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            autoplay: {
+                delay: 2000, // Set the delay in milliseconds (3 seconds in this example)
+                disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+            },
+        });
+    </script>
+    <!-- -----localstorage code is herer ---  -->
+    <script>
+        function storeValues() {
+        var carName = document.getElementById('carName');
+        var year = document.getElementById('year');
+        var distance = document.getElementById('distance');
+        var owner = document.getElementById('owner');
+        var fuel = document.getElementById('fuel');
+        var drive = document.getElementById('drive');
+
+        // Store selected text in local storage
+        localStorage.setItem('carName', carName.options[carName.selectedIndex].text);
+        localStorage.setItem('year', year.options[year.selectedIndex].text);
+        localStorage.setItem('distance', distance.value);
+        localStorage.setItem('owner', owner.options[owner.selectedIndex].text);
+        localStorage.setItem('fuel', fuel.options[fuel.selectedIndex].text);
+        localStorage.setItem('drive', drive.options[drive.selectedIndex].text);
+
+        // Submit the form
+        document.getElementById('drivedexForm').submit();
+    }
+
+
+
+
+     // Fetch data from local storage
+var carName = localStorage.getItem('carName') || 'N/A';
+var year = localStorage.getItem('year') || 'N/A';
+var distance = localStorage.getItem('distance') || 'N/A';
+var owner = localStorage.getItem('owner') || 'N/A';
+var fuel = localStorage.getItem('fuel') || 'N/A';
+var drive = localStorage.getItem('drive') || 'N/A';
+
+// Display data on the HTML page
+var displayContainer = document.getElementById('displayContainer');
+
+// Create an unordered list
+var dataList = document.createElement('ul');
+
+// Determine the image based on the car name
+var carImage = (carName.toLowerCase() === 'tata safari')
+    ? '{% static "image/safari-facelift-exterior-right-front-three-quarter-39.webp" %}'
+    : '{% static "image/tiago-ev.webp" %}';
+
+// Add list items for each data point along with the image
+dataList.innerHTML = `
+    <li class="kapil"><strong>Car Name:</strong> ${carName}</li>
+    <li class="kapil"><strong>Year:</strong> ${year}</li>
+    <li class="kapil"><strong>Distance:</strong> ${distance}</li>
+    <li class="kapil"><strong>Owner:</strong> ${owner}</li>
+    <li class="kapil"><strong>Fuel:</strong> ${fuel}</li>
+    <li class="kapil"><strong>Drive:</strong> ${drive}</li>
+    <img class="safari_img" src="${carImage}" alt="Car Image">
+`;
+
+// Append the list to the display container
+displayContainer.appendChild(dataList);
+
+   
+    </script>
+</body>
+
+</html>
